@@ -1,0 +1,196 @@
+.video-stream {
+  background: transparent !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+
+
+.session-divOthers {
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.session-divMe {
+  width: 100px;
+  height: 115px;
+  margin: 0 auto;
+  display: inline-block !important;
+  bottom: 15%;
+  position: absolute;
+  right: 0px;
+  z-index: 10 !important;
+}
+
+.session-content {
+  display: inline;
+}
+
+.session-btnDiv > .ion-ios-reverse-camera {
+  padding-right: 19px !important;
+  padding-left: 19px !important;
+}
+
+.session-btnDiv > .ion-ios-reverse-camera-outline {
+  padding-right: 19px !important;
+  padding-left: 19px !important;
+}
+
+.session-btnDiv > .ion-ios-telephone {
+  padding-left: 40px !important;
+}
+
+
+.session-btn-micIconBtn {
+  background-color: #07a29e !important;
+  min-width: 58px !important;
+}
+
+.session-btn-videoIconBtn {
+  background-color: #07a29e !important;
+  min-width: 61px !important;
+}
+
+
+
+
+.session-btn {
+  border-radius: 29px !important;
+}
+
+.session-rejoin-button {
+  top: 175px;
+  border-radius: 29px !important;
+  background-color: #f47f22 !important;
+  min-width: 105px !important;
+  color: white !important;
+}
+
+.session-quit-button {
+  position: absolute;
+  right: 0;
+  top: 175px;
+  border-radius: 29px !important;
+  background-color: gray !important;
+  min-width: 105px !important;
+  color: white !important;
+}
+
+.session-rejoin-row{
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 225px;
+}
+
+.session-video-button {
+  color: white !important;
+  background-color: transparent !important;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  border: none;
+}
+
+
+
+.connectBtn-div > .button.icon-left:before {
+  color: #07a29e;
+}
+
+.disconnectBtn-div > .button.icon-left:before {
+  color: #f47f22;
+}
+
+.connect-buttons{
+  width: 70px;
+}
+
+#connectButton {
+  border: 2px solid #07a29e;
+  background-color: #07a29e;
+}
+
+#disconnectButton {
+  background-color: #dc4f4f;
+  border: 2px solid #dc4f4f;
+}
+
+.session-hang-up{
+  width: 33px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.session-btnDiv {
+  text-align: center !important;
+  bottom: 0  !important;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding-bottom: 12px;
+}
+
+.session-btnDiv_Top {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #07a29e !important;
+  height: 64px;
+  border-bottom: 3px solid #f47f22 !important;
+}
+
+.session-btn-top {
+  margin-top: 17px;
+  color: white !important;
+  min-width: 46px !important;
+}
+
+.btn-bg{
+  background-color: #07a29e !important;
+}
+
+.session-content > .scroll {
+  height: 95% !important;
+}
+
+
+.session-establishConnectionText {
+  text-align: center !important;
+  font-size: 13px;
+  color: gray;
+  position: absolute;
+  top: 60px;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.session-establishConnection-load {
+  text-align: center !important;
+  font-size: 20px;
+  color: gray;
+  position: absolute;
+  top: 120px;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+

@@ -1,0 +1,63 @@
+<ion-view view-title="Video Session">
+
+  <ion-content class="session-content" scroll="false">
+    <div class="session-btnDiv_Top" ng-if="showControlBar">
+
+      <button
+        ng-class="videoFront ? 'ion-ios-reverse-camera' : 'ion-ios-reverse-camera-outline'"
+        class="button icon-left ion-ios-reverse-camera session-video-button"
+        ng-click="toggleCamera()">
+      </button>
+
+    </div>
+
+    <div class="session-content">
+
+      <div class="session-rejoin-row">
+        <p id="establishConnectionText" class="session-establishConnectionText">{{sessionText}}</p>
+        <ion-spinner id="establishConnectionLoad" icon="lines" class="session-establishConnection-load"></ion-spinner>
+
+        <button ng-if="disconnectedRejoin"
+                class="button session-rejoin-button"
+                ng-click="connectVideoChat()">
+          Rejoin
+        </button>
+        <button ng-if="disconnected"
+                class="button session-quit-button"
+                ng-click="showConfirm_Back()">
+          Quit
+        </button>
+        <button ng-if="disconnectedUser"
+                class="button session-quit-button"
+                ng-click="disconnectVideo_Back()">
+          Quit
+        </button>
+      </div>
+
+      <div id="div_others" class="session-divOthers"></div>
+      <div id="div_me" class="session-divMe"></div>
+    </div>
+
+    <div class="session-btnDiv" ng-if="showControlBar">
+      <button class="button icon-left session-btn session-btn-micIconBtn"
+              ng-click="streamAudio()">
+        <img ng-src="{{voiceOn && 'img/mic.png' || 'img/mic_off.png'}}"
+             class="session-hang-up">
+      </button>
+
+      <button ng-if="callStart" id="disconnectButton"
+              class="button icon-left connect-buttons session-btn session Btn-right"
+              ng-click="showConfirm_Disconnect()">
+        <img src="img/hang_up.png" class="session-hang-up">
+      </button>
+
+      <button id="videoStreamButtonOn"
+              class="button icon-left session-btn session-btn-videoIconBtn"
+              ng-click="streamVideo()">
+        <img ng-src="{{videoOn && 'img/video.png' || 'img/video_off.png'}}"
+             class="session-hang-up"/>
+      </button>
+
+    </div>
+  </ion-content>
+</ion-view>
