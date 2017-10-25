@@ -24,6 +24,7 @@ angular.module('smuaq.opentok', ['ionic','ngCordova','ngIdle','smuaq.opentok.con
 .config(function($stateProvider, IdleProvider) {
 
   IdleProvider.idle(5);
+  IdleProvider.timeout(259200000);
 
   $stateProvider
     .state('dash', {
